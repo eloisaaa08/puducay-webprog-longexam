@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Orbitron', sans-serif;
+    --font-body: 'Montserrat', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body);
+    @apply antialiased text-zinc-900;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  h4, h5, h6 {
+    font-family: var(--font-body);
+    font-weight: 600;
+  }
+}
